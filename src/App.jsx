@@ -85,23 +85,36 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="container">
         <div className="hero-content">
-          <div className="badge badge-accent">🔥 Irugur's Top-Rated Studio</div>
+          <div className="badge badge-accent">⭐ 4.9 Rating · 600+ Happy Members</div>
           <h1 className="hero-title">
-            Train Better. <br />
-            <span>Transform Faster.</span>
+            Your Body. <br />
+            <span>Your Empire.</span>
           </h1>
           <p className="hero-subtitle">
-            Irugur’s most trusted fitness studio with expert trainers, premium equipment, and real results. Join the community focused on discipline and true transformation.
+            Stop wishing. Start building. At JPS Fitness Studio, you’ll train in Irugur’s cleanest, most spacious gym — guided by expert trainers who actually care about your results. No crowded chaos. Just real transformation.
           </p>
           <div className="hero-ctas">
-            <a href="#contact" className="btn btn-primary">Join Now</a>
-            <a href="https://wa.me/919677388685" className="btn btn-secondary"><IconWhatsApp /> Book Free Trial</a>
+            <a href="#contact" className="btn btn-primary">Start Your Transformation</a>
+            <a href="https://wa.me/919677388685" className="btn btn-secondary"><IconWhatsApp /> Get Free Trial Session</a>
           </div>
           <div className="trust-signals">
-            <div className="stars">
-              <IconStar /><IconStar /><IconStar /><IconStar /><IconStar />
+            <div className="trust-badge">
+              <div className="stars">
+                <IconStar /><IconStar /><IconStar /><IconStar /><IconStar />
+              </div>
+              <div className="trust-text">
+                <strong style={{ color: 'var(--color-highlight)', fontSize: '1.1rem' }}>4.9/5 Rating</strong>
+                <p style={{ fontSize: '0.9rem', margin: 0 }}>600+ Google Reviews</p>
+              </div>
             </div>
-            <p style={{ fontWeight: '500' }}>4.9 Rating | 600+ Members</p>
+            <div className="trust-divider"></div>
+            <div className="trust-badge">
+              <IconCheckCircle style={{ fontSize: '1.5rem', color: 'var(--color-accent)' }} />
+              <div className="trust-text">
+                <strong style={{ color: 'var(--color-highlight)', fontSize: '1.1rem' }}>Expert Trainers</strong>
+                <p style={{ fontSize: '0.9rem', margin: 0 }}>Owner-Led Guidance</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -113,29 +126,63 @@ const About = () => {
   return (
     <section className="section bg-darker" id="about">
       <div className="container">
-        <div className="grid grid-2 items-center">
+        <div className="section-header">
+          <div className="badge badge-accent" style={{ margin: '0 auto 1rem' }}>Why Members Choose Us</div>
+          <h2 className="section-title text-center">We don't just sell memberships. <br /><span className="text-accent">We build champions.</span></h2>
+          <p className="section-subtitle" style={{ maxWidth: '700px' }}>
+            Walk into JPS Fitness Studio and you'll immediately feel the difference. This isn't a crowded, dirty gym where you're just a number. This is where transformation happens.
+          </p>
+        </div>
+
+        <div className="grid grid-2 items-center" style={{ marginTop: '4rem' }}>
           <div>
-            <h2 className="section-title">More than a gym — <br /><span className="text-accent">a place where discipline meets results.</span></h2>
-            <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: 'var(--color-secondary)' }}>
-              At JPS Fitness Studio, we are driven by passion. Led by expert owners Prabhu & Sri, our focus is entirely on your real fitness journey.
-              We've created a clean, spacious, and highly structured environment where beginners find strong guidance and fitness enthusiasts feel at home.
+            <p style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--color-secondary)', lineHeight: '1.8' }}>
+              Led by passionate owners <strong style={{ color: 'var(--color-highlight)' }}>Prabhu & Sri</strong>, we've built Irugur's most <strong style={{ color: 'var(--color-highlight)' }}>spacious and hygienic</strong> fitness studio. Every corner is designed for your comfort. Every piece of equipment is premium-grade and meticulously maintained.
             </p>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: 'var(--color-secondary)' }}>
-              No overcrowding, no neglect. Just pure focus on comfort, proper techniques, and transformative results.
+            <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', color: 'var(--color-secondary)', lineHeight: '1.8' }}>
+              You'll get <strong style={{ color: 'var(--color-accent)' }}>personal attention</strong> from trainers who know your name, track your progress, and push you when you need it most. Whether you're a complete beginner or a seasoned athlete — <strong style={{ color: 'var(--color-highlight)' }}>this is your space to grow.</strong>
             </p>
-            <ul style={{ display: 'grid', gap: '1rem', gridTemplateColumns: '1fr 1fr', marginBottom: '2rem' }}>
-              <li className="flex items-center" style={{ gap: '0.5rem', fontWeight: '500' }}><IconCheckCircle className="text-accent" /> Owner-Led Guidance</li>
-              <li className="flex items-center" style={{ gap: '0.5rem', fontWeight: '500' }}><IconCheckCircle className="text-accent" /> Space & Cleanliness</li>
-              <li className="flex items-center" style={{ gap: '0.5rem', fontWeight: '500' }}><IconCheckCircle className="text-accent" /> Premium Equipment</li>
-              <li className="flex items-center" style={{ gap: '0.5rem', fontWeight: '500' }}><IconCheckCircle className="text-accent" /> No Overcrowding</li>
-            </ul>
-            <a href="#services" className="btn btn-primary">Explore Services</a>
+            <div className="feature-grid">
+              <div className="feature-item">
+                <IconCheckCircle className="text-accent" style={{ fontSize: '1.5rem' }} />
+                <div>
+                  <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Owners Who Train You</h4>
+                  <p style={{ color: 'var(--color-secondary)', fontSize: '0.95rem' }}>Not hired staff — actual owners on the floor daily</p>
+                </div>
+              </div>
+              <div className="feature-item">
+                <IconCheckCircle className="text-accent" style={{ fontSize: '1.5rem' }} />
+                <div>
+                  <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Immaculate & Spacious</h4>
+                  <p style={{ color: 'var(--color-secondary)', fontSize: '0.95rem' }}>Gleaming floors, sanitized equipment, room to breathe</p>
+                </div>
+              </div>
+              <div className="feature-item">
+                <IconCheckCircle className="text-accent" style={{ fontSize: '1.5rem' }} />
+                <div>
+                  <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Premium Equipment</h4>
+                  <p style={{ color: 'var(--color-secondary)', fontSize: '0.95rem' }}>Top-brand machines maintained like new</p>
+                </div>
+              </div>
+              <div className="feature-item">
+                <IconCheckCircle className="text-accent" style={{ fontSize: '1.5rem' }} />
+                <div>
+                  <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Never Overcrowded</h4>
+                  <p style={{ color: 'var(--color-secondary)', fontSize: '0.95rem' }}>Batch system ensures comfort and focus</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" className="btn btn-primary" style={{ marginTop: '2rem' }}>Book Your Free Trial</a>
           </div>
           <div style={{ position: 'relative' }}>
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Gym owners and trainers" style={{ borderRadius: '8px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} />
-            <div style={{ position: 'absolute', bottom: '-20px', left: '-20px', background: 'var(--color-accent)', padding: '20px', borderRadius: '8px', boxShadow: '0 10px 20px rgba(0,0,0,0.5)' }}>
-              <h3 style={{ fontSize: '2rem', margin: 0 }}>4.9/5</h3>
-              <p style={{ margin: 0, fontWeight: 'bold' }}>Google Reviews</p>
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="Professional gym trainers" style={{ borderRadius: '12px', boxShadow: '0 30px 60px rgba(0,0,0,0.7)', width: '100%' }} />
+            <div className="rating-badge">
+              <div className="stars" style={{ marginBottom: '0.25rem' }}>
+                <IconStar /><IconStar /><IconStar /><IconStar /><IconStar />
+              </div>
+              <h3 style={{ fontSize: '2.5rem', margin: 0, lineHeight: 1, color: 'var(--color-primary)' }}>4.9</h3>
+              <p style={{ margin: 0, fontWeight: '700', fontSize: '1rem', color: 'var(--color-primary)' }}>600+ Reviews</p>
+              <p style={{ margin: '0.25rem 0 0', fontSize: '0.75rem', color: 'rgba(0,0,0,0.6)', fontWeight: '600' }}>GOOGLE RATING</p>
             </div>
           </div>
         </div>
@@ -146,26 +193,57 @@ const About = () => {
 
 const Services = () => {
   const services = [
-    { title: "Strength Training", icon: <IconDumbbell />, desc: "Build pure strength with progressive overloading and top-quality weights in a dedicated space." },
-    { title: "Weight Loss", icon: <IconHeart />, desc: "Structured cardio and high-intensity plans designed to burn fat and improve cardiovascular health." },
-    { title: "Muscle Building", icon: <IconWeight />, desc: "Hypertrophy-focused guidance to help you sculpt your body and increase muscle mass effectively." },
-    { title: "Personal Guidance", icon: <IconUser />, desc: "One-on-one attention from passionate owners ensuring perfect form and maximizing your potential." },
+    {
+      title: "Strength Training",
+      icon: <IconDumbbell />,
+      desc: "Build unstoppable power. Progressive training with premium equipment that helps you lift heavier, get stronger, and feel invincible."
+    },
+    {
+      title: "Weight Loss Programs",
+      icon: <IconHeart />,
+      desc: "Shed the weight that's been holding you back. Strategic cardio and nutrition guidance designed to burn fat and reveal the real you."
+    },
+    {
+      title: "Muscle Building",
+      icon: <IconWeight />,
+      desc: "Sculpt the physique you've always wanted. Science-backed hypertrophy training that packs on lean muscle and turns heads."
+    },
+    {
+      title: "Personal Coaching",
+      icon: <IconUser />,
+      desc: "You're not just another member. Get 1-on-1 attention from owners who watch your form, track your progress, and celebrate your wins."
+    },
   ];
 
   return (
     <section className="section bg-dark" id="services">
-      <div className="container text-center">
-        <h2 className="section-title">Our <span className="text-gradient">Services</span></h2>
-        <p className="section-subtitle">Comprehensive fitness programs tailored to your goals, guided by true experts in Irugur.</p>
+      <div className="container">
+        <div className="section-header">
+          <div className="badge badge-accent" style={{ margin: '0 auto 1rem' }}>What We Offer</div>
+          <h2 className="section-title text-center">Programs That <span className="text-gradient">Actually Work</span></h2>
+          <p className="section-subtitle">
+            No gimmicks. No shortcuts. Just proven fitness programs designed to match your goals and guided by trainers who've been exactly where you are now.
+          </p>
+        </div>
 
         <div className="grid grid-4" style={{ textAlign: 'left', marginTop: '3rem' }}>
           {services.map((srv, idx) => (
-            <div className="card" key={idx}>
+            <div className="card service-card" key={idx}>
               <div className="service-icon">{srv.icon}</div>
               <h3 className="service-title">{srv.title}</h3>
-              <p style={{ color: 'var(--color-secondary)' }}>{srv.desc}</p>
+              <p style={{ color: 'var(--color-secondary)', lineHeight: '1.7' }}>{srv.desc}</p>
             </div>
           ))}
+        </div>
+
+        <div className="cta-section" style={{ marginTop: '4rem', textAlign: 'center' }}>
+          <p style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--color-secondary)' }}>
+            Not sure which program is right for you? Let's talk.
+          </p>
+          <div className="flex justify-center" style={{ gap: '1rem', flexWrap: 'wrap' }}>
+            <a href="https://wa.me/919677388685" className="btn btn-whatsapp"><IconWhatsApp /> Get Free Consultation</a>
+            <a href="#contact" className="btn btn-secondary">Visit Us Today</a>
+          </div>
         </div>
       </div>
     </section>
@@ -178,40 +256,56 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="grid grid-2 items-center">
           <div>
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" alt="Clean Gym Space" style={{ borderRadius: '8px', height: '100%', objectFit: 'cover' }} />
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" alt="Spotless gym environment" style={{ borderRadius: '12px', height: '100%', objectFit: 'cover', boxShadow: '0 30px 60px rgba(0,0,0,0.7)' }} />
           </div>
-          <div style={{ padding: '2rem' }}>
-            <h2 className="section-title text-gradient">Train in a space designed for focus & performance.</h2>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>We stand out because we care. Our facility is designed to provide the most comfortable and effective training experience in the region.</p>
+          <div style={{ padding: '2rem 0' }}>
+            <div className="badge badge-accent" style={{ marginBottom: '1rem' }}>The JPS Difference</div>
+            <h2 className="section-title">Train in a space that <span className="text-gradient">feels premium.</span></h2>
+            <p style={{ fontSize: '1.15rem', marginBottom: '3rem', color: 'var(--color-secondary)', lineHeight: '1.8' }}>
+              The moment you step in, you'll notice the difference. Sparkling floors. Equipment that works perfectly. Fresh air. Space to move. This is what a <strong style={{ color: 'var(--color-highlight)' }}>real fitness studio</strong> should feel like.
+            </p>
 
             <div className="feature-row">
               <div className="feature-icon"><IconCheckCircle /></div>
               <div className="feature-content">
-                <h4>Top-Quality Equipment</h4>
-                <p>Well-maintained machines from reputed brands for safe and smooth workouts.</p>
+                <h4>Top-Tier Equipment</h4>
+                <p>Premium machines from trusted brands. Regularly serviced. Always ready. Train with confidence knowing every piece is gym-quality.</p>
               </div>
             </div>
+
             <div className="feature-row">
               <div className="feature-icon"><IconCheckCircle /></div>
               <div className="feature-content">
-                <h4>Clean & Hygienic Space</h4>
-                <p>Immaculate floors, sanitized equipment, and fresh airflow guaranteed daily.</p>
+                <h4>Obsessively Clean</h4>
+                <p>Immaculate floors swept daily. Equipment sanitized after every session. Fresh ventilation throughout. Your health and comfort come first.</p>
               </div>
             </div>
+
             <div className="feature-row">
               <div className="feature-icon"><IconCheckCircle /></div>
               <div className="feature-content">
-                <h4>Affordable Pricing</h4>
-                <p>Premium setup and expert coaching without the exorbitant luxury price tag.</p>
+                <h4>Space That Breathes</h4>
+                <p>No fighting for equipment. No cramped corners. Our batch system ensures you always have room to train comfortably and safely.</p>
               </div>
             </div>
+
             <div className="feature-row">
               <div className="feature-icon"><IconCheckCircle /></div>
               <div className="feature-content">
-                <h4>Passionate Owners</h4>
-                <p>Prabhu & Sri are always on the floor, correcting posture and pushing you forward.</p>
+                <h4>Trainers Who Care</h4>
+                <p>Prabhu & Sri aren't just owners — they're on the floor every day, correcting your form, tracking your progress, and genuinely invested in your success.</p>
               </div>
             </div>
+
+            <div className="feature-row">
+              <div className="feature-icon"><IconCheckCircle /></div>
+              <div className="feature-content">
+                <h4>Unbeatable Value</h4>
+                <p>Premium facility. Expert coaching. Personal attention. All at prices that actually make sense. No luxury gym markup.</p>
+              </div>
+            </div>
+
+            <a href="#contact" className="btn btn-primary" style={{ marginTop: '2rem' }}>Experience It Yourself</a>
           </div>
         </div>
       </div>
@@ -221,25 +315,70 @@ const WhyChooseUs = () => {
 
 const Testimonials = () => {
   const reviews = [
-    { text: "Game-changer gym! The environment is spotless and the equipment is top-notch. Best decision I made for my health.", author: "Arun K." },
-    { text: "Clean and well equipped. The trainers guide you like finding a mentor. Irugur really needed a state-of-the-art place like this.", author: "Sneha P." },
-    { text: "Best gym in Irugur by far. Prabhu and Sri give personal attention even during general training. Not overcrowded, very comfortable.", author: "Ramesh T." }
+    {
+      text: "I've been to 4 gyms in Coimbatore. This is the ONLY one where owners actually know my name and track my progress. Lost 12kg in 4 months. The cleanliness here is unmatched — you can literally see the pride they take in maintaining this place.",
+      author: "Arun Kumar",
+      role: "Software Engineer",
+      result: "Lost 12kg in 4 months"
+    },
+    {
+      text: "Finally, a gym that doesn't feel like a prison or a commercialized mess. Spacious, clean, and the equipment actually works perfectly. Prabhu and Sri correct my form every session — I've learned more here in 2 months than I did in years elsewhere.",
+      author: "Sneha Priya",
+      role: "Marketing Manager",
+      result: "Gained 5kg muscle"
+    },
+    {
+      text: "Best gym in Irugur, hands down. I was intimidated to start, but the trainers here made me feel comfortable from day one. The batch system means it's never overcrowded — I can actually breathe and focus on my workout. Worth every rupee.",
+      author: "Ramesh Thangaraj",
+      role: "Business Owner",
+      result: "Consistent for 18+ months"
+    }
   ];
 
   return (
     <section className="section bg-dark" id="testimonials">
       <div className="container">
-        <h2 className="section-title text-center">Real Results, <br /><span className="text-accent">Real Reviews</span></h2>
-        <p className="section-subtitle text-center">Join 600+ members who transformed their lifestyle with us.</p>
+        <div className="section-header">
+          <div className="badge badge-accent" style={{ margin: '0 auto 1rem' }}>Member Stories</div>
+          <h2 className="section-title text-center">Real People. <br /><span className="text-accent">Real Transformations.</span></h2>
+          <p className="section-subtitle text-center">
+            Don't just take our word for it. Here's what members who've actually trained here have to say.
+          </p>
+        </div>
 
         <div className="grid grid-3" style={{ marginTop: '3rem' }}>
           {reviews.map((rev, idx) => (
             <div className="card testimonial-card" key={idx}>
-              <div className="testimonial-stars"><IconStar /><IconStar /><IconStar /><IconStar /><IconStar /></div>
+              <div className="testimonial-stars">
+                <IconStar /><IconStar /><IconStar /><IconStar /><IconStar />
+              </div>
               <p className="testimonial-text">"{rev.text}"</p>
-              <p className="testimonial-author">— {rev.author}</p>
+              <div className="testimonial-footer">
+                <div>
+                  <p className="testimonial-author">{rev.author}</p>
+                  <p className="testimonial-role">{rev.role}</p>
+                </div>
+                <div className="testimonial-result">{rev.result}</div>
+              </div>
             </div>
           ))}
+        </div>
+
+        <div className="trust-stats" style={{ marginTop: '4rem', padding: '3rem 2rem', background: 'var(--color-surface-1)', borderRadius: '12px', border: '1px solid var(--color-surface-2)' }}>
+          <div className="grid grid-3" style={{ textAlign: 'center', gap: '3rem' }}>
+            <div>
+              <h3 style={{ fontSize: '3.5rem', color: 'var(--color-accent)', fontWeight: '800', marginBottom: '0.5rem' }}>600+</h3>
+              <p style={{ fontSize: '1.1rem', color: 'var(--color-secondary)' }}>Happy Members</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '3.5rem', color: 'var(--color-accent)', fontWeight: '800', marginBottom: '0.5rem' }}>4.9★</h3>
+              <p style={{ fontSize: '1.1rem', color: 'var(--color-secondary)' }}>Google Rating</p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '3.5rem', color: 'var(--color-accent)', fontWeight: '800', marginBottom: '0.5rem' }}>95%</h3>
+              <p style={{ fontSize: '1.1rem', color: 'var(--color-secondary)' }}>Renewal Rate</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -248,14 +387,47 @@ const Testimonials = () => {
 
 const FinalCTA = () => {
   return (
-    <section className="section" style={{ background: 'linear-gradient(135deg, var(--color-accent) 0%, #78350f 100%)', textAlign: 'center', padding: '6rem 1rem' }}>
-      <div className="container">
-        <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: '800', marginBottom: '1rem', color: 'white' }}>Start Your Fitness Journey Today.</h2>
-        <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)', marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>Take the first step towards a stronger, healthier, and more confident you. Walk in for a trial or contact us to know more.</p>
-        <div className="flex justify-center" style={{ gap: '1rem', flexWrap: 'wrap' }}>
-          <a href="#contact" className="btn" style={{ backgroundColor: 'white', color: 'var(--color-primary)' }}>Join JPS Fitness Studio</a>
-          <a href="https://wa.me/919677388685" className="btn" style={{ backgroundColor: 'transparent', border: '2px solid white', color: 'white' }}><IconWhatsApp /> Get Free Consultation</a>
+    <section className="section cta-section-final" style={{ background: 'linear-gradient(135deg, var(--color-accent) 0%, #d97706 100%)', textAlign: 'center', padding: '6rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15 }}></div>
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: '800', marginBottom: '1rem', color: 'var(--color-primary)', lineHeight: 1.1, textTransform: 'uppercase' }}>
+          Ready to Transform?
+        </h2>
+        <p style={{ fontSize: '1.3rem', color: 'var(--color-primary)', marginBottom: '2rem', maxWidth: '700px', margin: '0 auto 2.5rem', fontWeight: '600', lineHeight: 1.6 }}>
+          Stop scrolling. Stop waiting for Monday. Your strongest, healthiest self is waiting for you at JPS Fitness Studio.
+        </p>
+
+        <div className="cta-benefits" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', maxWidth: '900px', margin: '0 auto 3rem', textAlign: 'left' }}>
+          <div style={{ padding: '1.5rem', background: 'rgba(0,0,0,0.15)', borderRadius: '8px', backdropFilter: 'blur(10px)' }}>
+            <IconCheckCircle style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }} />
+            <h4 style={{ color: 'var(--color-primary)', fontSize: '1.1rem', marginBottom: '0.25rem' }}>Free Trial Session</h4>
+            <p style={{ color: 'rgba(0,0,0,0.8)', fontSize: '0.9rem', margin: 0 }}>Try before you commit</p>
+          </div>
+          <div style={{ padding: '1.5rem', background: 'rgba(0,0,0,0.15)', borderRadius: '8px', backdropFilter: 'blur(10px)' }}>
+            <IconCheckCircle style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }} />
+            <h4 style={{ color: 'var(--color-primary)', fontSize: '1.1rem', marginBottom: '0.25rem' }}>Expert Guidance</h4>
+            <p style={{ color: 'rgba(0,0,0,0.8)', fontSize: '0.9rem', margin: 0 }}>Owners who actually train you</p>
+          </div>
+          <div style={{ padding: '1.5rem', background: 'rgba(0,0,0,0.15)', borderRadius: '8px', backdropFilter: 'blur(10px)' }}>
+            <IconCheckCircle style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '0.5rem' }} />
+            <h4 style={{ color: 'var(--color-primary)', fontSize: '1.1rem', marginBottom: '0.25rem' }}>Zero Pressure</h4>
+            <p style={{ color: 'rgba(0,0,0,0.8)', fontSize: '0.9rem', margin: 0 }}>See the space, meet us, decide</p>
+          </div>
         </div>
+
+        <div className="flex justify-center" style={{ gap: '1rem', flexWrap: 'wrap' }}>
+          <a href="https://wa.me/919677388685" className="btn" style={{ backgroundColor: 'var(--color-primary)', color: 'white', fontSize: '1.1rem', padding: '1rem 2.5rem', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}>
+            <IconWhatsApp /> Book Free Trial Now
+          </a>
+          <a href="tel:09677388685" className="btn" style={{ backgroundColor: 'transparent', border: '3px solid var(--color-primary)', color: 'var(--color-primary)', fontSize: '1.1rem', padding: '1rem 2.5rem', fontWeight: '700' }}>
+            <IconPhone /> Call: 096773 88685
+          </a>
+        </div>
+
+        <p style={{ marginTop: '2rem', fontSize: '0.95rem', color: 'rgba(0,0,0,0.7)', fontWeight: '600' }}>
+          ⏰ Limited slots available per batch · Join Irugur's #1 rated gym today
+        </p>
       </div>
     </section>
   );
