@@ -115,7 +115,7 @@ const Header = () => {
   return (
     <Nav isScrolled={isScrolled}>
       <NavbarContainer>
-        <NavLogo href="#">JPS FITNESS</NavLogo>
+        <NavLogo href="#">DEMO FITNESS</NavLogo>
         <MobileIcon onClick={toggle}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </MobileIcon>

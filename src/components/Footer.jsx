@@ -48,14 +48,14 @@ const Footer = () => {
     <FooterWrapper>
       <Container>
         <FooterContent>
-          <FooterTitle>JPS FITNESS STUDIO</FooterTitle>
-          <p>The best fitness studio in Irugur, Coimbatore. Join us to achieve your fitness goals.</p>
+          <FooterTitle>DEMO FITNESS STUDIO</FooterTitle>
+          <p>A demo gym website built for showcasing programs, trainers, and transformations with placeholder contact details.</p>
           <SocialLinks>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
           </SocialLinks>
-          <Copyright>&copy; {new Date().getFullYear()} JPS Fitness Studio. All Rights Reserved.</Copyright>
+          <Copyright>&copy; {new Date().getFullYear()} Demo Fitness Studio. All Rights Reserved.</Copyright>
         </FooterContent>
       </Container>
     </FooterWrapper>
